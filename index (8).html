@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red's Mini Cafe</title>
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3059/3059789.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background-color: #f5f0e1;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #loginSection {
+      background-color: rgba(245, 240, 225, 0.9);
+      width: 350px;
+      margin: 100px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+
+    #loginSection h2 {
+      color: #8b0000;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+
+    button {
+      padding: 10px 25px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a52a2a;
+    }
+
+    #myBusiness {
+      display: none;
+      background-color: rgba(245, 240, 225, 0.9);
+      color: #333;
+      border-radius: 10px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding-bottom: 20px;
+    }
+
+    header {
+      background-color: rgba(139, 0, 0, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    nav {
+      background-color: rgba(165, 42, 42, 0.9);
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: rgba(139, 0, 0, 0.9);
+      color: white;
+      padding: 15px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    h3 {
+      color: #8b0000;
+    }
+
+    .product {
+      margin: 20px;
+    }
+
+    .product img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #a52a2a;
+      display: block;
+      margin: 10px auto;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="loginSection">
+  <h2>Welcome to Red's Mini Cafe</h2>
+
+  <form onsubmit="document.getElementById('myBusiness').style.display='block'; document.getElementById('loginSection').style.display='none'; return false;">
+    
+    <p style="color:#8b0000;">Your Name:</p>
+    <input type="text" placeholder="Enter your name" required>
+    <br><br>
+
+    <button type="submit">Enter Cafe</button>
+
+  </form>
+</div>
+
+<div id="myBusiness">
+
+<header id="home">
+  <h1>Red's Mini Cafe</h1>
+  <p><i>Fresh Brew, Fresh Mood!</i></p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Our Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>About Our Cafe</h2>
+  <p>
+    Welcome to Red's Mini Cafe! We serve delicious drinks and snacks at affordable prices. 
+    Our goal is to bring joy to every customer with our fresh brews and warm hospitality.
+  </p>
+</section>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+
+  <h3>Drinks</h3>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Hot Coffee">
+    <p>Hot Coffee - ₱30</p>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Iced Coffee">
+    <p>Iced Coffee - ₱40</p>
+  </div>
+
+  <h3>Snacks</h3>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad" alt="Cheesecake">
+    <p>Cheesecake - ₱80</p>
+  </div>
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Chocolate Cake">
+    <p>Chocolate Cake - ₱70</p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: redsminicafe@email.com</p>
+  <p>Phone: 0916-457-7809</p>
+  <a href="#" style="color:#8b0000; text-decoration:underline;">View Our Location Here</a>
+</section>
+
+</main>
+
+<footer>
+  <p>From: Red's Mini Cafe | All Rights Reserved</p>
+</footer>
+
+</div>
+
+</body>
+</html>
